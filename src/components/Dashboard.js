@@ -13,7 +13,7 @@ const Dashboard = () => {
   const apiKey = process.env.NEXT_PUBLIC_MY_KEY;
 
   const fetchWeather = async () => {
-    const url = `http://api.openweathermap.org/data/2.5/forecast?q=${location}&units=metric&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&units=metric&appid=${apiKey}`;
     try {
       //fetch data from url
       const data = await fetch(url);
